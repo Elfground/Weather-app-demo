@@ -1,11 +1,17 @@
 
 section {
-    background: linear-gradient(to top, #f43b47 0%, #453a94 100%);
-    max-width: 70%;
+    background: linear-gradient(to top, #9e333a 0%, #f88989 100%);
+    max-width: 600px;
     margin: 0px auto;
     border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 10px;
     padding-top: 25px;
     padding-bottom: 40px;
+  }
+  h1 {
+    text-align: center;
+  }
+  form {
+    text-align: center;
   }
