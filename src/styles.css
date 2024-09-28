@@ -16,9 +16,7 @@ section {
     padding-bottom: 150px;
     box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.2);
   }
-  header {
-    
-  }
+
   main {
     margin: 30 px;
   }
@@ -47,12 +45,24 @@ section {
   a {
     color: white;
   }
+  a:hover {
+    color: #8B8999;
+  }
   form {
     font-family: "Roboto", system-ui, arial;
     font-weight: 100;
     font-style: normal;
     padding: 10px;
-
+  }
+  input[type=search] {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  input[type=submit] {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
   }
   footer {
     margin: 0px;
@@ -64,6 +74,7 @@ section {
     font-style: normal;
     color: white;
   }
+ 
   .city {
     border: none;
     border-radius: 5px;
@@ -75,15 +86,21 @@ section {
   .search-button {
     border: none;
     border-radius: 5px;
-    background: white;
+    background: #cfcce6;
     padding: 15px;
     width: 20%;
     margin: 0px 10px 0px 0px;
     box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
   }
+  .search-button:hover {
+    background: #afa7d3;
+    color:white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
   .app-data {
     font-family: "Roboto", system-ui, arial;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
     display: flex;
     justify-content: space-between;
