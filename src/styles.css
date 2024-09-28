@@ -1,17 +1,100 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
 
 section {
-    background: linear-gradient(to top, #9e333a 0%, #f88989 100%);
+    background: linear-gradient(to bottom, rgba(255, 241, 235,0.6) 0%, rgba(172, 224, 249,0.6) 100%);
     max-width: 600px;
     margin: 0px auto;
     border-radius: 15px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 0px;
     padding-top: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 150px;
+    box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.2);
   }
+  header {
+    
+  }
+  main {
+    margin: 30 px;
+  }
+
   h1 {
     text-align: center;
+    font-family: "Roboto", system-ui, arial;
+    font-size: 75px;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  h2 {
+    text-align: center;
+    font-family: "Roboto", system-ui, arial;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+  a {
+    color: white;
   }
   form {
+    font-family: "Roboto", system-ui, arial;
+    font-weight: 100;
+    font-style: normal;
+    padding: 10px;
+
+  }
+  footer {
+    margin: 0px;
+    padding: 10px;
     text-align: center;
+    font-size: 13px;
+    font-family: "Roboto", system-ui, arial;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+  }
+  .city {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 70%;
+    margin: 0px 10px 0px 20px;
+    box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
+  }
+  .search-button {
+    border: none;
+    border-radius: 5px;
+    background: white;
+    padding: 15px;
+    width: 20%;
+    margin: 0px 10px 0px 0px;
+    box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
+  }
+  .app-data {
+    font-family: "Roboto", system-ui, arial;
+    font-weight: 100;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 30px 0px 45px;
+  }
+  .app-data-icon {
+    text-align: center;
+    margin: -40px 0px 0px 60px;
+
+  }
+  .app-data-conditions {
+    text-align: right;
+    margin: 0px 20px 0px 0px;
   }
