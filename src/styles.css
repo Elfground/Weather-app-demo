@@ -143,7 +143,10 @@ section {
     color: rgb(100, 100, 100);
   }
   .weather-forecast-icon {
-    padding: 15px;
+    width: 66px;
+    height: 66px;
+    display: block;
+    margin: 0px auto;
   }
   .weather-forecast-temperatures {
     color: #5a4c99;
