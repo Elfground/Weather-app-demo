@@ -18,6 +18,7 @@ function refreshWeather(response) {
     humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
     windspeedElement.innerHTML = `${response.data.wind.speed} km/h`;
     temperatureElement.innerHTML = Math.round(temperature);
+    getForecast(response.data.city);
     console.log(response.data);
 }
 
@@ -48,7 +49,33 @@ function handleSearchSubmit(event) {
     
     searchCity(searchInput.value);
 }
+function getForecast(city) {
+let apiKey = "2f78437a500ef24fc3e9894233eftb0o";
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+axios(apiUrl).then(displayForecast);
+
+}
+function displayForecast(response) {
+    console.log(response.data);
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+    let forecastHtml = ""; 
+
+    days.forEach(function(day) {
+        forecastHtml = 
+        forecastHtml +
+        `
+        <div class="weather-forecast-data">
+        <div class="weather-forecast-day">${day}</div>
+        <div class="weather-forecast-icon">☀️</div>
+        <div class="weather-forecast-temperatures">10°<span class="temp-low">5°</span></div>
+        </div>
+        `;
+    });
+    let forecastElement = document.querySelector("#forecast");
+    forecastElement.innerHTML = forecastHtml;
+}
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Stockholm");
+getForecast("Stockholm");
