@@ -13,12 +13,12 @@ section {
     margin-top: 60px;
     margin-bottom: 0px;
     padding-top: 25px;
-    padding-bottom: 60px;
+    padding-bottom: 35px;
     box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.2);
   }
 
   main {
-    margin: 30 px;
+    margin: 0px 30px 0px 30px;
   }
 
   h1 {
@@ -105,17 +105,20 @@ section {
     font-style: normal;
     display: flex;
     justify-content: space-between;
-    margin: 40px 30px 0px 45px;
+    margin: 20px 0px 0px 15px;
     color: rgb(100, 100, 100);
+  }
+  .app-details {
+    margin-top: 30px;
   }
   .app-data-icon {
     text-align: center;
-    margin: -40px 0px 0px 75px;
+    padding-left: 100px;
 
   }
   .app-data-conditions {
     text-align: right;
-    margin: 0px 20px 0px 0px;
+    margin: 30px 20px 0px 0px;
   }
   .weather-conditions {
     text-align:center;
@@ -123,7 +126,7 @@ section {
     font-weight: 300;
     font-style: normal;
     color: rgb(100, 100, 100);
-    margin: -40px 0px 0px 0px;
+    margin: 0px 0px 50px 0px;
   }
   .weather-forecast {
     display: flex;
@@ -138,6 +141,11 @@ section {
     text-align: center;
     font-size: 16px;
     line-height: 20px;
+    max-width: 100%;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
+    padding: 15px;
 }
   .weather-forecast-day {
     color: rgb(100, 100, 100);
