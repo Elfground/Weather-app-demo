@@ -163,3 +163,106 @@ section {
     padding-left: 12px;
     color: rgba(90, 76, 153, 0.6);
   }
+  @media (max-width:576px) {
+    h1 {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    h3 {
+        margin-top: 5px;
+    }
+    p {
+        font-size: smaller;
+    }
+    section {
+      background: linear-gradient(to bottom, rgba(255, 241, 235,0.6) 0%, rgba(172, 224, 249,0.6) 100%);
+      max-width: 375px;
+      margin: 0px auto;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-bottom: 0px;
+      padding-top: 25px;
+      padding-bottom: 35px;
+      box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    .icons {
+        font-size:30px;
+    }
+    form {
+      font-family: "Roboto", system-ui, arial;
+      font-size: 11px;
+      font-weight: 100;
+      font-style: normal;
+      padding: 10px;
+    }
+    .app-data-icon {
+      text-align: center;
+      padding-left: 20px;
+    }
+    .app-data-icon img {
+      text-align: center;
+     max-width: 120px;
+    }
+    .app-data-conditions {
+      text-align: right;
+      margin: 30px 10px 0px 0px;
+    }
+    .search-form-input {
+      border: none;
+      border-radius: 5px;
+      padding: 15px;
+      width: 55%;
+      margin: 15px 20px 0px 30px;
+      box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
+    }
+    .search-button {
+      border: none;
+      border-radius: 5px;
+      background: #cfcce6;
+      padding: 15px;
+      width: 20%;
+      margin: 0px 10px 0px 0px;
+      box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
+    }
+    .search-button:hover {
+      background: #afa7d3;
+      color:white;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    .weather-forecast {
+      display: block;
+      /* justify-content: space-around; */
+      margin-top: 30px;
+  }
+  
+  .weather-forecast-data {
+      font-family: "Roboto", system-ui, arial;
+      font-weight: 500;
+      font-style: normal;
+      text-align: center;
+      font-size: 11px;
+      line-height: 12px;
+      max-width: 100%;
+      background:rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      margin-bottom: 15px;
+  }
+    footer {
+      margin: 0px;
+      padding: 10px;
+      max-width: 375px;
+      text-align: center;
+      font-size: 11px;
+      font-family: "Roboto", system-ui, arial;
+      font-weight: 300;
+      font-style: normal;
+      color: white;
+    }
+  } 
